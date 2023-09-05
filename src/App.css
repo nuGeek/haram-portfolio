@@ -1,0 +1,311 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&family=Staatliches&family=Ysabeau+Infant&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Anek+Tamil:wght@200&family=Shrikhand&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.App {
+  /* text-align: center; */
+  color: white;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.background {
+  /* background-color: rgb(248, 248, 248); */
+  background-color: rgb(29, 28, 28);
+  height: auto;
+
+  /* padding-top: 80px; */
+}
+
+.Home .body_box {
+  /* padding-top: 80px; */
+
+  padding: 80px 80px 0 80px;
+}
+
+.Home .title {
+  font-family: "Staatliches", cursive;
+  font-size: 6em;
+  padding-top: 20px;
+}
+
+.Home .title span {
+  font-size: 0.5em;
+}
+
+/* Navigation */
+.Navigation {
+  /* background-color: rgb(138, 25, 244); */
+  background-color: rgb(47, 44, 44);
+
+  /* width: 10%; */
+  height: 80px;
+
+  color: white;
+
+  position: fixed;
+  width: 100%;
+  left: 0;
+  top: 0;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.Navigation div {
+  color: white;
+  display: block;
+  cursor: pointer;
+
+  padding: 20px 15px;
+
+  font-size: 1.5em;
+}
+
+.Navigation div:first-child {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0;
+}
+.Navigation div:first-child a {
+  /* padding: 0; */
+  font-size: 1.5em;
+}
+
+.Navigation .scroll_item {
+  color: #8b8b8b;
+  padding-left: 0px;
+  font-family: "Staatliches", cursive;
+  font-size: 2.5em;
+
+  /* font-size: 6em;
+  padding-top: 20px; */
+}
+
+.Navigation .scroll_item span {
+  font-size: 0.5em;
+}
+
+.Navigation .email {
+  font-size: 0.9em;
+}
+
+.Navigation ul {
+  list-style-type: none;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  height: 80px;
+}
+
+.Navigation ul li {
+  /* display: block; */
+  text-decoration: none;
+}
+
+.Navigation a {
+  transition: 0.4s;
+
+  color: white;
+  display: block;
+  text-decoration: none;
+  /* height: 80px; */
+
+  /* width: 70px; */
+  padding: 20px 20px;
+  text-align: center;
+
+  /* font-size: 25px; */
+
+  /* padding-top: 10px; */
+  /* border-top: 1px solid rgb(70, 67, 67); */
+}
+
+.Navigation ul li a:first-child {
+  /* font-size: 25px; */
+}
+.Navigation a:first-child:hover {
+  cursor: pointer;
+}
+
+.Navigation ul li a:hover {
+  /* background-color: rgb(117, 22, 205); */
+  border-bottom: 3px solid rgb(117, 22, 205);
+  font-size: 1.7em;
+}
+.Navigation ul li a:active {
+  border-bottom: 3px solid rgb(117, 22, 205);
+  font-size: 1.3em;
+}
+
+.Navigation .logo {
+  font-family: "Shrikhand", cursive;
+  font-size: 2.5em;
+}
+
+/* Banners */
+.Banners {
+  color: #8b8b8b;
+
+  font-family: "Anek Tamil", sans-serif;
+  font-weight: 500;
+  font-size: 4em;
+  letter-spacing: -0.2px;
+}
+.Banners .banner_conainer p {
+  cursor: pointer;
+  transition: 0.5s ease-out;
+}
+
+.Banners .banner_conainer p span {
+  transition: 0.5s ease-out;
+}
+.Banners .banner_conainer p:hover span {
+  color: #fff;
+  text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 40px #fff;
+}
+
+/* -----------------END OF BANNER------------------ */
+
+hr {
+  /* width: 77%; */
+
+  border: none; /* Remove the default border */
+  border-top: 1.5px solid #8b8b8b; /* Set the new border thickness and color */
+  margin: 20px 0;
+}
+
+/* Works */
+.Works {
+  /* background-color: rgb(107, 107, 103); */
+
+  /* width: 90%; */
+  margin-top: 30px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.Works .work_container {
+  display: flex;
+  justify-content: space-between;
+  height: auto;
+}
+
+.WorkBox {
+  width: 47%;
+}
+
+.WorkBox .work_img {
+  /* width: 95%; */
+  height: 550px;
+  background-color: white;
+
+  cursor: pointer;
+
+  border-radius: 5px;
+  margin-bottom: 10px;
+
+  overflow: hidden;
+
+  transition: transform 0.3s;
+}
+.WorkBox .work_img:hover {
+  transform: scale(1.05);
+}
+
+.WorkBox .work_descript {
+  /* margin-top: 15px; */
+  padding: 10px;
+  margin: auto;
+  /* width: 95%; */
+  text-align: justify;
+
+  /* background-color: rgb(62, 68, 73); */
+  border-radius: 5px;
+}
+
+.WorkBox .work_descript h2 {
+  margin-bottom: 10px;
+  font-size: 2em;
+  /* color: blue; */
+}
+
+.WorkBox .work_descript p {
+  font-family: "Anek Tamil", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  letter-spacing: -0.2px;
+
+  /* color: #8b8b8b; */
+}
+
+.WorkBox img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  justify-content: center;
+}
+
+.WorkBox .descript {
+  padding-bottom: 10px;
+}
+
+.toolBox .toolBox_container {
+  /* margin-left: auto;
+  margin-right: auto; */
+
+  display: grid;
+  justify-content: center;
+  /* justify-content: space-around;
+  flex-wrap: wrap; */
+  grid-template-columns: repeat(4, 1fr);
+  /* grid-template-rows: repeat(2, 1fr); */
+  grid-gap: 15px;
+}
+
+.toolBox h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.toolBox .toolBox_container div {
+  width: 200px;
+  height: 200px;
+
+  /* margin-bottom: 50px; */
+
+  /* background-color: #8b8b8b; */
+}
+
+.toolBox .toolBox_container div img {
+  margin-left: 50px;
+  width: 200px;
+  height: 200px;
+}
+
+@keyframes fadeIn {
+  from {
+    transform: translateY(-80px);
+  }
+  to {
+    transform: translateY((0));
+  }
+}
+
+/* Apply the 'fadeIn' animation to the component with the class 'animation-component' */
+.animation-component {
+  animation: fadeIn 0.8s ease-in;
+}
+
+@media (max-width: 600px) {
+  .Works .work_container {
+    flex-wrap: wrap;
+  }
+}
